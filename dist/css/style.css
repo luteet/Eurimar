@@ -1,3 +1,8 @@
+.section-bg,body,html {
+    height: 100%;
+    width: 100%
+}
+
 body,html {
     -webkit-text-size-adjust: 100%
 }
@@ -16,19 +21,6 @@ progress,sub,sup {
 
 *,:after,:before,[type=checkbox],[type=radio],legend {
     box-sizing: border-box
-}
-
-.bg-img,.header__nav--link::after {
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none
-}
-
-.bg-img,.section-bg {
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    left: 0
 }
 
 .btn,.footer__nav--btn,.header__nav--contact {
@@ -59,8 +51,6 @@ aside,details,footer,header,main,nav {
 }
 
 body,html {
-    height: 100%;
-    width: 100%;
     line-height: 1;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%
@@ -309,14 +299,6 @@ section {
     position: relative
 }
 
-.bg-img {
-    position: absolute;
-    top: 0;
-    user-select: none;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
 .btn {
     display: inline-block;
     padding: 9.21px 30px;
@@ -359,7 +341,9 @@ section {
 
 .section-bg {
     position: absolute;
+    left: 0;
     top: 0;
+    z-index: -1;
     background: var(--accent)
 }
 
@@ -685,6 +669,9 @@ section {
     grid-area: 1/1;
     font-weight: 700;
     color: var(--accent);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     transition: color .2s ease-in-out,opacity .2s ease-in-out;
     opacity: 0
