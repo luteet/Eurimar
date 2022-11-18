@@ -1,0 +1,92 @@
+
+.main-title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    line-height: 115%;
+    color: var(--white);
+    margin: 0;
+
+    font-size: 2rem;
+
+    @include _768 {
+        font-size: 3.5rem;
+    }
+
+    @include _992 {
+        font-size: 6rem;
+    }
+}
+
+.title {
+    
+    font-family: var(--title-font);
+    font-weight: 700;
+
+    font-size: 1.125rem;
+
+    @include _768 {
+        font-size: 1.5rem;
+    }
+
+    @include _992 {
+        font-size: 1.875rem;
+    }
+    
+    &._min {
+
+    }
+}
+
+.section-title {
+
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 146%;
+    text-align: center;
+
+    &._left {
+        text-align: left;
+    }
+
+    @include _768 {
+        font-size: 2.5rem;
+    }
+    
+    @include _992 {
+        font-size: 3rem;
+    }
+
+}
+
+.section-text {
+    font-size: 0.875rem;
+    line-height: 193%;
+    text-align: center;
+
+    &._left {
+        text-align: left;
+    }
+}
+
+.section-large-text {
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: center;
+
+    @include _768 {
+        font-size: 1.125rem;
+    }
+    
+    @include _992 {
+        font-size: 1.25rem;
+    }
+
+    &._left {
+        text-align: left;
+    }
+}
+
+.txt-center {
+    text-align: center;
+}

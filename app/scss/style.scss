@@ -1,0 +1,19 @@
+@import 'mixin';
+@import 'null';
+@import 'libs';
+@import 'vars';
+@import 'global';
+@import 'font';
+
+@import 'main-sections/header';
+
+
+@import 'pages/index/intro';
+@import 'pages/index/transport';
+@import 'pages/index/advantages';
+@import 'pages/index/employees';
+@import 'pages/index/tabor';
+@import 'pages/index/contacts';
+
+
+@import 'main-sections/footer';

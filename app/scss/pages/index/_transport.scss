@@ -1,0 +1,43 @@
+.transport {
+
+    // .transport__container
+
+    &__container {
+    }
+
+    // .transport__title
+
+    &__title {
+    }
+
+    // .transport__text
+
+    &__text {
+        max-width: 603px;
+        margin: 0 auto;
+    }
+
+    // .transport__inner
+
+    &__inner {
+    }
+
+    // .transport__info
+
+    &__info {
+    }
+
+    // .transport__image
+
+    &__image {
+
+        // .transport__image--img
+
+        &--img {
+            height: 225px;
+            @include _768 {
+                height: initial;
+            }
+        }
+    }
+}

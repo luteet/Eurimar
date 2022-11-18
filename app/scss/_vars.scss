@@ -1,0 +1,41 @@
+
+
+$containerPadding: 15;
+
+$container: 1140 + ($containerPadding * 2);
+$containerMin: 1280 + ($containerPadding * 2);
+$containerLarge: 1560 + ($containerPadding * 2);
+
+:root {
+    --title-font: 'Montserrat';
+    --main-font: 'Montserrat';
+    
+    --accent: #313280;
+    --accent-dark: #181a57;
+
+    --dark: #212121;
+    --light: #EDEDED;
+
+    --white: #FFF;
+    --black: #000;
+    --light-gray: #d3d3d3;
+    --light-gray-2: #bdbdbd;
+
+    --container-padding: 15px;
+}
+
+@font-face {
+    @include font-include('Montserrat', 400, swap, normal, 'Montserrat-Regular');
+}
+
+@font-face {
+    @include font-include('Montserrat', 500, swap, normal, 'Montserrat-Medium');
+}
+
+@font-face {
+    @include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
+}
+
+@font-face {
+    @include font-include('Montserrat', 700, swap, normal, 'Montserrat-Bold');
+}
