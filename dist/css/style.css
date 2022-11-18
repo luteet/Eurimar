@@ -180,10 +180,6 @@ legend {
     white-space: normal
 }
 
-.contacts,.header__burger,.header__language--list,.main,.section-bg,body._active,body._popup-active {
-    overflow: hidden
-}
-
 [type=checkbox],[type=radio] {
     padding: 0
 }
@@ -251,10 +247,14 @@ body,html {
 
 body {
     margin: 0;
+    color: var(--dark);
     font-family: var(--main-font);
     font-weight: 400;
-    line-height: 150%;
-    color: var(--dark)
+    line-height: 150%
+}
+
+body._active,body._popup-active {
+    overflow: hidden
 }
 
 .offset-top-check {
@@ -270,6 +270,7 @@ body {
 }
 
 .main {
+    overflow: hidden;
     flex: 1 0 auto
 }
 
@@ -344,7 +345,8 @@ section {
     left: 0;
     top: 0;
     z-index: -1;
-    background: var(--accent)
+    background: var(--accent);
+    overflow: hidden
 }
 
 .section-bg._reverse .section-bg__element {
@@ -798,6 +800,7 @@ section {
     background: var(--light);
     width: 100%;
     border-radius: 0 0 4px 4px;
+    overflow: hidden;
     transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
     opacity: 0;
     visibility: hidden
@@ -824,6 +827,7 @@ section {
     position: relative;
     width: 44px;
     height: 44px;
+    overflow: hidden;
     z-index: 10;
     cursor: pointer;
     background: var(--accent);
@@ -1147,6 +1151,10 @@ section {
 .advantages__item--text {
     font-size: .875rem;
     line-height: 172%
+}
+
+.contacts {
+    overflow: hidden
 }
 
 .contacts__bg--image {
